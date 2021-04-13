@@ -11,22 +11,25 @@ architecture ronda_tb_arq of ronda_tb is
 
 	-- Declaracion de componente
 	component ronda is
+		generic(
+			N:natural:=8
+		);	
 		port(
-			R_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(0,8));
-			L_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(0,8));
-			K_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(1,8));
-			QR_o: out std_logic_vector(7 downto 0);
-			QL_o: out std_logic_vector(7 downto 0)
+			R_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+			L_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+			K_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(1,N));
+			QR_o: out std_logic_vector(N-1 downto 0);
+			QL_o: out std_logic_vector(N-1 downto 0)
 		);
 	end component;
 	
 	-- Declaracion de senales de prueba
 	
-	signal R_i_tb: std_logic_vector(7 downto 0):="00000000";
-	signal L_i_tb: std_logic_vector(7 downto 0):="00000000";
-	signal K_i_tb: std_logic_vector(7 downto 0):="11111111";
-	signal QR_tb: std_logic_vector(7 downto 0);
-	signal QL_tb: std_logic_vector(7 downto 0);
+	signal R_i_tb: std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+	signal L_i_tb: std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+	signal K_i_tb: std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+	signal QR_tb: std_logic_vector(N-1 downto 0);
+	signal QL_tb: std_logic_vector(N-1 downto 0);
 
 begin
 

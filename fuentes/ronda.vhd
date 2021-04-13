@@ -3,12 +3,15 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity ronda is
+	generic(
+		N:natural:=8
+	);	
 	port(
-		R_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(0,8));
-		L_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(0,8));
-		K_i: in std_logic_vector(7 downto 0):=std_logic_vector(to_unsigned(0,8));
-		QR_o: out std_logic_vector(7 downto 0);
-		QL_o: out std_logic_vector(7 downto 0)
+		R_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		L_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		K_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		QR_o: out std_logic_vector(N-1 downto 0);
+		QL_o: out std_logic_vector(N-1 downto 0)
 	);
 end;
 
