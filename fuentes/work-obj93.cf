@@ -1,7 +1,13 @@
 v 3
-file . "ronda.vhd" "20210413185242.000" "20210413171243.608":
-  entity ronda at 1( 0) + 0 on 43;
-  architecture ronda_arq of ronda at 15( 428) + 0 on 44;
+file . "nrondas_tb.vhd" "20210414190420.000" "20210414160423.635":
+  entity nrondas_tb at 1( 0) + 0 on 55;
+  architecture nrondas_tb_arq of nrondas_tb at 8( 104) + 0 on 56;
+file . "nrondas.vhd" "20210414011230.000" "20210414160338.306":
+  entity nrondas at 1( 0) + 0 on 53;
+  architecture nrondas_arq of nrondas at 20( 513) + 0 on 54;
 file . "ronda_tb.vhd" "20210413195540.000" "20210413171254.826":
   entity ronda_tb at 1( 0) + 0 on 45;
   architecture ronda_tb_arq of ronda_tb at 10( 137) + 0 on 46;
+file . "ronda.vhd" "20210413214006.000" "20210414160302.140":
+  entity ronda at 1( 0) + 0 on 51;
+  architecture ronda_arq of ronda at 18( 476) + 0 on 52;

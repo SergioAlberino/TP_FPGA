@@ -7,11 +7,11 @@ entity ronda is
 		N:natural:=8
 	);	
 	port(
-		R_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
-		L_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
-		K_i: in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
-		QR_o: out std_logic_vector(N-1 downto 0);
-		QL_o: out std_logic_vector(N-1 downto 0)
+		R_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		L_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		K_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		QR_o: 	out std_logic_vector(N-1 downto 0);
+		QL_o: 	out std_logic_vector(N-1 downto 0)
 	);
 end;
 
