@@ -1,5 +1,5 @@
 $date
-  Wed Apr 14 16:05:39 2021
+  Thu Apr 15 16:12:59 2021
 $end
 $version
   GHDL v0
@@ -21,19 +21,149 @@ $var reg 8 * ql_o[7:0] $end
 $comment raux is not handled $end
 $comment laux is not handled $end
 $comment k is not handled $end
-$scope module ronda_ins_0 $end
+$scope module nrondas_gen(0) $end
+$scope module ronda_ins_i $end
 $var reg 8 + r_i[7:0] $end
 $var reg 8 , l_i[7:0] $end
 $var reg 8 - k_i[7:0] $end
 $var reg 8 . qr_o[7:0] $end
 $var reg 8 / ql_o[7:0] $end
 $upscope $end
-$scope module ronda_ins_1 $end
+$upscope $end
+$scope module nrondas_gen(1) $end
+$scope module ronda_ins_i $end
 $var reg 8 0 r_i[7:0] $end
 $var reg 8 1 l_i[7:0] $end
 $var reg 8 2 k_i[7:0] $end
 $var reg 8 3 qr_o[7:0] $end
 $var reg 8 4 ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(2) $end
+$scope module ronda_ins_i $end
+$var reg 8 5 r_i[7:0] $end
+$var reg 8 6 l_i[7:0] $end
+$var reg 8 7 k_i[7:0] $end
+$var reg 8 8 qr_o[7:0] $end
+$var reg 8 9 ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(3) $end
+$scope module ronda_ins_i $end
+$var reg 8 : r_i[7:0] $end
+$var reg 8 ; l_i[7:0] $end
+$var reg 8 < k_i[7:0] $end
+$var reg 8 = qr_o[7:0] $end
+$var reg 8 > ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(4) $end
+$scope module ronda_ins_i $end
+$var reg 8 ? r_i[7:0] $end
+$var reg 8 @ l_i[7:0] $end
+$var reg 8 A k_i[7:0] $end
+$var reg 8 B qr_o[7:0] $end
+$var reg 8 C ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(5) $end
+$scope module ronda_ins_i $end
+$var reg 8 D r_i[7:0] $end
+$var reg 8 E l_i[7:0] $end
+$var reg 8 F k_i[7:0] $end
+$var reg 8 G qr_o[7:0] $end
+$var reg 8 H ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(6) $end
+$scope module ronda_ins_i $end
+$var reg 8 I r_i[7:0] $end
+$var reg 8 J l_i[7:0] $end
+$var reg 8 K k_i[7:0] $end
+$var reg 8 L qr_o[7:0] $end
+$var reg 8 M ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(7) $end
+$scope module ronda_ins_i $end
+$var reg 8 N r_i[7:0] $end
+$var reg 8 O l_i[7:0] $end
+$var reg 8 P k_i[7:0] $end
+$var reg 8 Q qr_o[7:0] $end
+$var reg 8 R ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(8) $end
+$scope module ronda_ins_i $end
+$var reg 8 S r_i[7:0] $end
+$var reg 8 T l_i[7:0] $end
+$var reg 8 U k_i[7:0] $end
+$var reg 8 V qr_o[7:0] $end
+$var reg 8 W ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(9) $end
+$scope module ronda_ins_i $end
+$var reg 8 X r_i[7:0] $end
+$var reg 8 Y l_i[7:0] $end
+$var reg 8 Z k_i[7:0] $end
+$var reg 8 [ qr_o[7:0] $end
+$var reg 8 \ ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(10) $end
+$scope module ronda_ins_i $end
+$var reg 8 ] r_i[7:0] $end
+$var reg 8 ^ l_i[7:0] $end
+$var reg 8 _ k_i[7:0] $end
+$var reg 8 ` qr_o[7:0] $end
+$var reg 8 a ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(11) $end
+$scope module ronda_ins_i $end
+$var reg 8 b r_i[7:0] $end
+$var reg 8 c l_i[7:0] $end
+$var reg 8 d k_i[7:0] $end
+$var reg 8 e qr_o[7:0] $end
+$var reg 8 f ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(12) $end
+$scope module ronda_ins_i $end
+$var reg 8 g r_i[7:0] $end
+$var reg 8 h l_i[7:0] $end
+$var reg 8 i k_i[7:0] $end
+$var reg 8 j qr_o[7:0] $end
+$var reg 8 k ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(13) $end
+$scope module ronda_ins_i $end
+$var reg 8 l r_i[7:0] $end
+$var reg 8 m l_i[7:0] $end
+$var reg 8 n k_i[7:0] $end
+$var reg 8 o qr_o[7:0] $end
+$var reg 8 p ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(14) $end
+$scope module ronda_ins_i $end
+$var reg 8 q r_i[7:0] $end
+$var reg 8 r l_i[7:0] $end
+$var reg 8 s k_i[7:0] $end
+$var reg 8 t qr_o[7:0] $end
+$var reg 8 u ql_o[7:0] $end
+$upscope $end
+$upscope $end
+$scope module nrondas_gen(15) $end
+$scope module ronda_ins_i $end
+$var reg 8 v r_i[7:0] $end
+$var reg 8 w l_i[7:0] $end
+$var reg 8 x k_i[7:0] $end
+$var reg 8 y qr_o[7:0] $end
+$var reg 8 z ql_o[7:0] $end
+$upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -58,6 +188,76 @@ b00000000 1
 b10101010 2
 b00000000 3
 b10101010 4
+b00000000 5
+b10101010 6
+b10101010 7
+b00000000 8
+b00000000 9
+b00000000 :
+b00000000 ;
+b10101010 <
+b10101010 =
+b00000000 >
+b10101010 ?
+b00000000 @
+b10101010 A
+b00000000 B
+b10101010 C
+b00000000 D
+b10101010 E
+b10101010 F
+b00000000 G
+b00000000 H
+b00000000 I
+b00000000 J
+b10101010 K
+b10101010 L
+b00000000 M
+b10101010 N
+b00000000 O
+b10101010 P
+b00000000 Q
+b10101010 R
+b00000000 S
+b10101010 T
+b10101010 U
+b00000000 V
+b00000000 W
+b00000000 X
+b00000000 Y
+b10101010 Z
+b10101010 [
+b00000000 \
+b10101010 ]
+b00000000 ^
+b10101010 _
+b00000000 `
+b10101010 a
+b00000000 b
+b10101010 c
+b10101010 d
+b00000000 e
+b00000000 f
+b00000000 g
+b00000000 h
+b10101010 i
+b10101010 j
+b00000000 k
+b10101010 l
+b00000000 m
+b10101010 n
+b00000000 o
+b10101010 p
+b00000000 q
+b10101010 r
+b10101010 s
+b00000000 t
+b00000000 u
+b00000000 v
+b00000000 w
+b10101010 x
+b10101010 y
+b00000000 z
 #100000000
 b10101010 !
 b00000000 %
@@ -69,6 +269,43 @@ b10101010 /
 b00000000 0
 b10101010 1
 b00000000 4
+b00000000 6
+b10101010 8
+b10101010 :
+b00000000 =
+b10101010 >
+b00000000 ?
+b10101010 @
+b00000000 C
+b00000000 E
+b10101010 G
+b10101010 I
+b00000000 L
+b10101010 M
+b00000000 N
+b10101010 O
+b00000000 R
+b00000000 T
+b10101010 V
+b10101010 X
+b00000000 [
+b10101010 \
+b00000000 ]
+b10101010 ^
+b00000000 a
+b00000000 c
+b10101010 e
+b10101010 g
+b00000000 j
+b10101010 k
+b00000000 l
+b10101010 m
+b00000000 p
+b00000000 r
+b10101010 t
+b10101010 v
+b00000000 y
+b10101010 z
 #200000000
 b00001111 "
 b00001111 $
@@ -81,6 +318,43 @@ b00001111 .
 b00001111 0
 b00001111 3
 b00001111 4
+b00001111 5
+b00001111 6
+b00001111 9
+b00001111 ;
+b00001111 =
+b00001111 ?
+b00001111 B
+b00001111 C
+b00001111 D
+b00001111 E
+b00001111 H
+b00001111 J
+b00001111 L
+b00001111 N
+b00001111 Q
+b00001111 R
+b00001111 S
+b00001111 T
+b00001111 W
+b00001111 Y
+b00001111 [
+b00001111 ]
+b00001111 `
+b00001111 a
+b00001111 b
+b00001111 c
+b00001111 f
+b00001111 h
+b00001111 j
+b00001111 l
+b00001111 o
+b00001111 p
+b00001111 q
+b00001111 r
+b00001111 u
+b00001111 w
+b00001111 y
 #400000000
 #500000000
 b11110000 !
@@ -93,3 +367,40 @@ b11110000 /
 b01010101 0
 b11110000 1
 b01010101 4
+b01010101 6
+b11110000 8
+b11110000 :
+b01010101 =
+b11110000 >
+b01010101 ?
+b11110000 @
+b01010101 C
+b01010101 E
+b11110000 G
+b11110000 I
+b01010101 L
+b11110000 M
+b01010101 N
+b11110000 O
+b01010101 R
+b01010101 T
+b11110000 V
+b11110000 X
+b01010101 [
+b11110000 \
+b01010101 ]
+b11110000 ^
+b01010101 a
+b01010101 c
+b11110000 e
+b11110000 g
+b01010101 j
+b11110000 k
+b01010101 l
+b11110000 m
+b01010101 p
+b01010101 r
+b11110000 t
+b11110000 v
+b01010101 y
+b11110000 z

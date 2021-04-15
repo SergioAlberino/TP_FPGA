@@ -24,7 +24,7 @@ architecture Nrondas_tb_arq of Nrondas_tb is
 		);
 	end component;
 
-	constant N_tb: 	natural := 8;
+	constant N_tb: 		natural := 8;
 
 -- Senales de prueba
 	signal R_i_tb: std_logic_vector(N_tb-1 downto 0):=std_logic_vector(to_unsigned(0,N_tb));
