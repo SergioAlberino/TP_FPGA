@@ -11,7 +11,7 @@ entity Nrondas is
 	port(
 		R_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
 		L_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
-		K_i: 	in std_logic_vector(N-1 downto 0):=std_logic_vector(to_unsigned(0,N));
+		--K_i: 	in std_logic_vector(55 downto 0):=std_logic_vector(to_unsigned(0,N));
 		QR_o: 	out std_logic_vector(N-1 downto 0);
 		QL_o: 	out std_logic_vector(N-1 downto 0)
 	);
@@ -36,37 +36,42 @@ architecture Nrondas_arq of Nrondas is
 	constant NR:natural:=16;
 	-- se define una matriz de std logic vectors
 	type MATRIX is array (NR downto 0) of std_logic_vector(N-1 downto 0);
-
+	
 	-- se define señales auxiliares
 	signal Raux: MATRIX;
 	signal Laux: MATRIX; 
 	signal k: MATRIX;
+	signal clave: std_logic_vector(55 downto 0);
 
 
 begin
-
+	clave  <= "10101010101010101010101010101010101010101010101010101010";
 	Raux(0) <= R_i;
 	Laux(0) <= L_i;
 
+	
+	subkey_calc : for i in 0 to NR generate
+		K(i)<= clave((N+i)-1 downto i);
+	end generate;
 	--------------------------
 	--set de subclaves
 	--------------------------
-	K(0) <= "10101010"; 
-	K(1) <= "10101010"; 
-	K(2) <= "10101010"; 
-	K(3) <= "10101010"; 
-	K(4) <= "10101010"; 
-	K(5) <= "10101010"; 
-	K(6) <= "10101010"; 
-	K(7) <= "10101010"; 
-	K(8) <= "10101010"; 
-	K(9) <= "10101010"; 
-	K(10) <= "10101010"; 
-	K(11) <= "10101010"; 
-	K(12) <= "10101010"; 
-	K(13) <= "10101010"; 
-	K(14) <= "10101010"; 
-	K(15) <= "10101010"; 
+	-- K(0) <= "10101010"; 
+	-- K(1) <= "10101010"; 
+	-- K(2) <= "10101010"; 
+	-- K(3) <= "10101010"; 
+	-- K(4) <= "10101010"; 
+	-- K(5) <= "10101010"; 
+	-- K(6) <= "10101010"; 
+	-- K(7) <= "10101010"; 
+	-- K(8) <= "10101010"; 
+	-- K(9) <= "10101010"; 
+	-- K(10) <= "10101010"; 
+	-- K(11) <= "10101010"; 
+	-- K(12) <= "10101010"; 
+	-- K(13) <= "10101010"; 
+	-- K(14) <= "10101010"; 
+	-- K(15) <= "10101010"; 
 
 
 	--------------------------

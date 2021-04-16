@@ -19,6 +19,6 @@ architecture ronda_arq of ronda is
 begin
 
 	QL_o <= R_i;
-	--Acá falta implementar la Función F o de Feistel. Se reemplaza con una XOR
+	--Acá falta implementar la Función F o de Feistel. Se reemplaza con una
 	QR_o <= L_i xor ( R_i xor K_i);
 end;
