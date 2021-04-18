@@ -1,19 +1,19 @@
 v 3
-file . "des_tb.vhd" "20210416002626.000" "20210415212724.921":
-  entity des_tb at 1( 0) + 0 on 131;
-  architecture des_tb_arq of des_tb at 10( 135) + 0 on 132;
-file . "nrondas_tb.vhd" "20210415202150.000" "20210415172202.260":
-  entity nrondas_tb at 1( 0) + 0 on 117;
-  architecture nrondas_tb_arq of nrondas_tb at 10( 139) + 0 on 118;
-file . "nrondas.vhd" "20210415201952.000" "20210415172208.315":
-  entity nrondas at 1( 0) + 0 on 119;
-  architecture nrondas_arq of nrondas at 20( 514) + 0 on 120;
-file . "ronda_tb.vhd" "20210413195540.000" "20210413171254.826":
-  entity ronda_tb at 1( 0) + 0 on 45;
-  architecture ronda_tb_arq of ronda_tb at 10( 137) + 0 on 46;
+file . "des.vhd" "20210415235618.000" "20210415215509.923":
+  entity des at 1( 0) + 0 on 135;
+  architecture des_arq of des at 17( 319) + 0 on 136;
 file . "ronda.vhd" "20210415201220.000" "20210415171955.173":
   entity ronda at 1( 0) + 0 on 109;
   architecture ronda_arq of ronda at 18( 476) + 0 on 110;
-file . "des.vhd" "20210415235618.000" "20210415212719.469":
-  entity des at 1( 0) + 0 on 129;
-  architecture des_arq of des at 17( 319) + 0 on 130;
+file . "ronda_tb.vhd" "20210413195540.000" "20210413171254.826":
+  entity ronda_tb at 1( 0) + 0 on 45;
+  architecture ronda_tb_arq of ronda_tb at 10( 137) + 0 on 46;
+file . "nrondas.vhd" "20210415201952.000" "20210415172208.315":
+  entity nrondas at 1( 0) + 0 on 119;
+  architecture nrondas_arq of nrondas at 20( 514) + 0 on 120;
+file . "nrondas_tb.vhd" "20210415202150.000" "20210415172202.260":
+  entity nrondas_tb at 1( 0) + 0 on 117;
+  architecture nrondas_tb_arq of nrondas_tb at 10( 139) + 0 on 118;
+file . "des_tb.vhd" "20210416005642.000" "20210415215646.123":
+  entity des_tb at 1( 0) + 0 on 137;
+  architecture des_tb_arq of des_tb at 10( 135) + 0 on 138;
