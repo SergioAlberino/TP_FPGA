@@ -76,7 +76,5 @@ begin
 		end generate;
 
 	des_text_o <= Raux(NR) & Laux(NR);
-	-- des_text_o(N-1 downto 0)<= Raux(NR);
-	-- des_text_o((2*N)-1 downto N)  <=  Laux(NR);
 
 end;
