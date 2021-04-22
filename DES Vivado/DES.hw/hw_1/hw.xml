@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z010_1" gui_info="dashboard1=dashboard_1[xc7z010_1/XADC=XADC_PLOT_1;],dashboard2=dashboard_2[xc7z010_1/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z010_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_3/des.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_3/des.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_3/des.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="des_text_o[63:0]" gui_info="dashboard_2/hw_vio_1=0"/>
+    <Object name="plain_text_i[63:0]" gui_info="dashboard_2/hw_vio_1=1"/>
+  </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="XADC" gui_info="dashboard_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="des_text_o[63]"/>
+        <net name="des_text_o[62]"/>
+        <net name="des_text_o[61]"/>
+        <net name="des_text_o[60]"/>
+        <net name="des_text_o[59]"/>
+        <net name="des_text_o[58]"/>
+        <net name="des_text_o[57]"/>
+        <net name="des_text_o[56]"/>
+        <net name="des_text_o[55]"/>
+        <net name="des_text_o[54]"/>
+        <net name="des_text_o[53]"/>
+        <net name="des_text_o[52]"/>
+        <net name="des_text_o[51]"/>
+        <net name="des_text_o[50]"/>
+        <net name="des_text_o[49]"/>
+        <net name="des_text_o[48]"/>
+        <net name="des_text_o[47]"/>
+        <net name="des_text_o[46]"/>
+        <net name="des_text_o[45]"/>
+        <net name="des_text_o[44]"/>
+        <net name="des_text_o[43]"/>
+        <net name="des_text_o[42]"/>
+        <net name="des_text_o[41]"/>
+        <net name="des_text_o[40]"/>
+        <net name="des_text_o[39]"/>
+        <net name="des_text_o[38]"/>
+        <net name="des_text_o[37]"/>
+        <net name="des_text_o[36]"/>
+        <net name="des_text_o[35]"/>
+        <net name="des_text_o[34]"/>
+        <net name="des_text_o[33]"/>
+        <net name="des_text_o[32]"/>
+        <net name="des_text_o[31]"/>
+        <net name="des_text_o[30]"/>
+        <net name="des_text_o[29]"/>
+        <net name="des_text_o[28]"/>
+        <net name="des_text_o[27]"/>
+        <net name="des_text_o[26]"/>
+        <net name="des_text_o[25]"/>
+        <net name="des_text_o[24]"/>
+        <net name="des_text_o[23]"/>
+        <net name="des_text_o[22]"/>
+        <net name="des_text_o[21]"/>
+        <net name="des_text_o[20]"/>
+        <net name="des_text_o[19]"/>
+        <net name="des_text_o[18]"/>
+        <net name="des_text_o[17]"/>
+        <net name="des_text_o[16]"/>
+        <net name="des_text_o[15]"/>
+        <net name="des_text_o[14]"/>
+        <net name="des_text_o[13]"/>
+        <net name="des_text_o[12]"/>
+        <net name="des_text_o[11]"/>
+        <net name="des_text_o[10]"/>
+        <net name="des_text_o[9]"/>
+        <net name="des_text_o[8]"/>
+        <net name="des_text_o[7]"/>
+        <net name="des_text_o[6]"/>
+        <net name="des_text_o[5]"/>
+        <net name="des_text_o[4]"/>
+        <net name="des_text_o[3]"/>
+        <net name="des_text_o[2]"/>
+        <net name="des_text_o[1]"/>
+        <net name="des_text_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="123456789ABCDEF1"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="plain_text_i[63]"/>
+        <net name="plain_text_i[62]"/>
+        <net name="plain_text_i[61]"/>
+        <net name="plain_text_i[60]"/>
+        <net name="plain_text_i[59]"/>
+        <net name="plain_text_i[58]"/>
+        <net name="plain_text_i[57]"/>
+        <net name="plain_text_i[56]"/>
+        <net name="plain_text_i[55]"/>
+        <net name="plain_text_i[54]"/>
+        <net name="plain_text_i[53]"/>
+        <net name="plain_text_i[52]"/>
+        <net name="plain_text_i[51]"/>
+        <net name="plain_text_i[50]"/>
+        <net name="plain_text_i[49]"/>
+        <net name="plain_text_i[48]"/>
+        <net name="plain_text_i[47]"/>
+        <net name="plain_text_i[46]"/>
+        <net name="plain_text_i[45]"/>
+        <net name="plain_text_i[44]"/>
+        <net name="plain_text_i[43]"/>
+        <net name="plain_text_i[42]"/>
+        <net name="plain_text_i[41]"/>
+        <net name="plain_text_i[40]"/>
+        <net name="plain_text_i[39]"/>
+        <net name="plain_text_i[38]"/>
+        <net name="plain_text_i[37]"/>
+        <net name="plain_text_i[36]"/>
+        <net name="plain_text_i[35]"/>
+        <net name="plain_text_i[34]"/>
+        <net name="plain_text_i[33]"/>
+        <net name="plain_text_i[32]"/>
+        <net name="plain_text_i[31]"/>
+        <net name="plain_text_i[30]"/>
+        <net name="plain_text_i[29]"/>
+        <net name="plain_text_i[28]"/>
+        <net name="plain_text_i[27]"/>
+        <net name="plain_text_i[26]"/>
+        <net name="plain_text_i[25]"/>
+        <net name="plain_text_i[24]"/>
+        <net name="plain_text_i[23]"/>
+        <net name="plain_text_i[22]"/>
+        <net name="plain_text_i[21]"/>
+        <net name="plain_text_i[20]"/>
+        <net name="plain_text_i[19]"/>
+        <net name="plain_text_i[18]"/>
+        <net name="plain_text_i[17]"/>
+        <net name="plain_text_i[16]"/>
+        <net name="plain_text_i[15]"/>
+        <net name="plain_text_i[14]"/>
+        <net name="plain_text_i[13]"/>
+        <net name="plain_text_i[12]"/>
+        <net name="plain_text_i[11]"/>
+        <net name="plain_text_i[10]"/>
+        <net name="plain_text_i[9]"/>
+        <net name="plain_text_i[8]"/>
+        <net name="plain_text_i[7]"/>
+        <net name="plain_text_i[6]"/>
+        <net name="plain_text_i[5]"/>
+        <net name="plain_text_i[4]"/>
+        <net name="plain_text_i[3]"/>
+        <net name="plain_text_i[2]"/>
+        <net name="plain_text_i[1]"/>
+        <net name="plain_text_i[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

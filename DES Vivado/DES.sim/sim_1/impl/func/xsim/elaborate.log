@@ -1,0 +1,16 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto bf502f9ecb834c4aa935a545ad2993f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot des_tb_func_impl xil_defaultlib.des_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] des remains a black-box since it has no binding entity [C:/Proyectos/DES/DES.srcs/sim_1/imports/fuentes/des_tb.vhd:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture des_tb_arq of entity xil_defaultlib.des_tb
+Built simulation snapshot des_tb_func_impl

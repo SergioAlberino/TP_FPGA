@@ -9,12 +9,27 @@ entity des is
 		M:natural:=64
 	);	
 	port(
-		plain_text_i: 	in std_logic_vector(M-1 downto 0):=std_logic_vector(to_unsigned(0,M));
-		des_text_o: 	out std_logic_vector(M-1 downto 0)
+	    clk : IN STD_LOGIC
+		--plain_text_i: 	in std_logic_vector(M-1 downto 0):=std_logic_vector(to_unsigned(0,M));
+		--des_text_o: 	out std_logic_vector(M-1 downto 0)
 	);
 end;
 
 architecture des_arq of des is
+
+------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
+COMPONENT vio_1
+  PORT (
+    clk : IN STD_LOGIC;
+    probe_in0 : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+    probe_out0 : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
+  );
+  
+END COMPONENT;
+-- COMP_TAG_END ------ End COMPONENT Declaration ------------
+	
+	signal plain_text_i: std_logic_vector(63 downto 0);
+	signal des_text_o: 	std_logic_vector(63 downto 0);
 	
 	component ronda is
 		generic(
@@ -29,7 +44,6 @@ architecture des_arq of des is
 		);
 	end component;
 
-
 	-- Cantidad de Rondas
 	constant NR:natural:=16;
 	-- se define una matriz de std logic vectors
@@ -43,6 +57,15 @@ architecture des_arq of des is
 
 
 begin
+	
+	------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
+your_instance_name : vio_1
+  PORT MAP (
+    clk => clk,
+    probe_in0 => des_text_o,
+    probe_out0 => plain_text_i
+  );
+-- INST_TAG_END ------ End INSTANTIATION Template ---------
 	------------------------------------------
 	-- se setea una clave
 	------------------------------------------
@@ -76,6 +99,7 @@ begin
 		end generate;
 
 	des_text_o <= Raux(NR) & Laux(NR);
+	
 	-- des_text_o(N-1 downto 0)<= Raux(NR);
 	-- des_text_o((2*N)-1 downto N)  <=  Laux(NR);
 

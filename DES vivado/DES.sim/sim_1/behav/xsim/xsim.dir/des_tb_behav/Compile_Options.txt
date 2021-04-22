@@ -1,1 +1,1 @@
--wto "bf502f9ecb834c4aa935a545ad2993f4" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "des_tb_behav" "xil_defaultlib.des_tb" -log "elaborate.log" 
+-wto "bf502f9ecb834c4aa935a545ad2993f4" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "des_tb_behav" "xil_defaultlib.des_tb" -log "elaborate.log" 

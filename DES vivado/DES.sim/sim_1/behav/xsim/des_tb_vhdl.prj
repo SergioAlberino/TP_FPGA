@@ -1,7 +1,5 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../DES.srcs/sources_1/imports/fuentes/des.vhd" \
-"../../../../DES.srcs/sources_1/imports/fuentes/ronda.vhd" \
 "../../../../DES.srcs/sim_1/imports/fuentes/des_tb.vhd" \
 
 # Do not sort compile order

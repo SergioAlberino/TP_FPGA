@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"des_tb_func_impl.vhd" \
+"../../../../../DES.srcs/sim_1/imports/fuentes/des_tb.vhd" \
+
+# Do not sort compile order
+nosort

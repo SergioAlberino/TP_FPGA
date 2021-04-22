@@ -1,9 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Sun Apr 18 20:34:32 2021
+-- Date        : Sun Apr 18 20:34:25 2021
 -- Host        : SERGIOPC running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim c:/Proyectos/DES/DES.srcs/sources_1/ip/vio_0/vio_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vio_0 -prefix
+--               vio_0_ vio_0_sim_netlist.vhdl
 -- Design      : vio_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -64,8 +65,6 @@ entity vio_0_vio_v3_0_18_decoder is
     probe_width_int : in STD_LOGIC_VECTOR ( 0 to 0 );
     \Bus_Data_out_int_reg[15]\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_decoder : entity is "vio_v3_0_18_decoder";
 end vio_0_vio_v3_0_18_decoder;
 
 architecture STRUCTURE of vio_0_vio_v3_0_18_decoder is
@@ -1367,8 +1366,6 @@ entity vio_0_vio_v3_0_18_probe_in_one is
     D : in STD_LOGIC_VECTOR ( 126 downto 0 );
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_probe_in_one : entity is "vio_v3_0_18_probe_in_one";
 end vio_0_vio_v3_0_18_probe_in_one;
 
 architecture STRUCTURE of vio_0_vio_v3_0_18_probe_in_one is
@@ -14275,8 +14272,6 @@ entity vio_0_vio_v3_0_18_probe_out_one is
     Committ_2_reg : in STD_LOGIC;
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_probe_out_one : entity is "vio_v3_0_18_probe_out_one";
 end vio_0_vio_v3_0_18_probe_out_one;
 
 architecture STRUCTURE of vio_0_vio_v3_0_18_probe_out_one is
@@ -19377,8 +19372,6 @@ entity vio_0_vio_v3_0_18_probe_width is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_probe_width : entity is "vio_v3_0_18_probe_width";
 end vio_0_vio_v3_0_18_probe_width;
 
 architecture STRUCTURE of vio_0_vio_v3_0_18_probe_width is
@@ -19715,8 +19708,6 @@ entity vio_0_xsdbs_v1_0_2_xsdbs is
   attribute C_XDEVICEFAMILY of vio_0_xsdbs_v1_0_2_xsdbs : entity is "artix7";
   attribute C_XSDB_SLAVE_TYPE : integer;
   attribute C_XSDB_SLAVE_TYPE of vio_0_xsdbs_v1_0_2_xsdbs : entity is 33;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_xsdbs_v1_0_2_xsdbs : entity is "xsdbs_v1_0_2_xsdbs";
   attribute dont_touch : string;
   attribute dont_touch of vio_0_xsdbs_v1_0_2_xsdbs : entity is "true";
 end vio_0_xsdbs_v1_0_2_xsdbs;
@@ -22765,8 +22756,6 @@ entity vio_0_vio_v3_0_18_probe_out_all is
     \Bus_Data_out_int_reg[2]\ : in STD_LOGIC;
     \Bus_Data_out_int_reg[1]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_probe_out_all : entity is "vio_v3_0_18_probe_out_all";
 end vio_0_vio_v3_0_18_probe_out_all;
 
 architecture STRUCTURE of vio_0_vio_v3_0_18_probe_out_all is
@@ -29406,8 +29395,6 @@ entity vio_0_vio_v3_0_18_vio is
   attribute LC_TOTAL_PROBE_IN_WIDTH of vio_0_vio_v3_0_18_vio : entity is 127;
   attribute LC_TOTAL_PROBE_OUT_WIDTH : integer;
   attribute LC_TOTAL_PROBE_OUT_WIDTH of vio_0_vio_v3_0_18_vio : entity is 127;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vio_0_vio_v3_0_18_vio : entity is "vio_v3_0_18_vio";
   attribute dont_touch : string;
   attribute dont_touch of vio_0_vio_v3_0_18_vio : entity is "true";
 end vio_0_vio_v3_0_18_vio;

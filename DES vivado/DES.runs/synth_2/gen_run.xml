@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1618755604">
+<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1619119170">
   <File Type="PA-TCL" Name="des.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="des_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="des_reports.tcl"/>
@@ -11,6 +11,13 @@
   <File Type="VDS-TIMING-PB" Name="des_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/vio_1/vio_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/fuentes/ronda.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../TP_FPGA/fuentes/ronda.vhd"/>
@@ -35,23 +42,21 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc/Arty-A7-35-Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc/Arty-Z7-10-Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../digilent-xdc/Arty-A7-35-Master.xdc"/>
-        <Attr Name="ImportTime" Val="1617144320"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../digilent-xdc/Arty-Z7-10-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1618967210"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/digilent-xdc/Arty-A7-35-Master.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/digilent-xdc/Arty-Z7-10-Master.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

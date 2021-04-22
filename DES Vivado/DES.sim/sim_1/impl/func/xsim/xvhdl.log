@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyectos/DES/DES.sim/sim_1/impl/func/xsim/des_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ronda
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyectos/DES/DES.srcs/sim_1/imports/fuentes/des_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity des_tb
